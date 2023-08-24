@@ -107,6 +107,37 @@
 .logo {
   position: relative;
 }
+
+.divform {
+  height: 100vh;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.formm {
+  background-color: rgb(193, 220, 220);
+  border-radius: .7rem;
+  height: 70vh;
+  border: solid;
+  border-width: thin;
+  
+}
+
+.inputt {
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  border-radius: .5rem;
+  border: solid;
+  border-width: thin;
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
