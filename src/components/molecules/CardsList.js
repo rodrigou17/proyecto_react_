@@ -19,7 +19,7 @@ const Db = [
     img: "https://f.fcdn.app/imgs/c4ef81/www.lacancha.uy/lcanuy/2b73/webp/catalogo/DH2987_005_1/800x800/nike-court-vision-low-nike-court-vision-low.jpg",
     title:"Nike Court Vision Low",
     price:"UYU 4.790",
-  }/* ,
+  },
   {
     id: 4,
     img: "https://f.fcdn.app/imgs/b35f84/www.lacancha.uy/lcanuy/f6cd/webp/catalogo/DV6842_100_1/800x800/nike-air-max-sc-ess-style-nike-air-max-sc-ess-style.jpg",
@@ -55,7 +55,7 @@ const Db = [
     img: "https://f.fcdn.app/imgs/256aa9/www.lacancha.uy/lcanuy/5305/webp/catalogo/DV3854_102_1/800x800/nike-air-zoom-pegasus-40-nike-air-zoom-pegasus-40.jpg",
     title:"Nike Air Zoom Pegasus 40",
     price:"UYU 8.690",
-  }, */
+  },
 
 
   
@@ -72,12 +72,20 @@ const CardsList = () => {
       }
       <style jsx>{`
       section{
-        display: flex;
-        justify-content: space between;
-      }
+        height: 500px;
+        width: 800px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        @media screen and (max-width: 768px) {
+          grid-template-columns: repeat(2,1fr);
+        };
+      @media screen and (max-width: 480px) {
+          grid-template-columns: repeat(1,1fr);
+        };
       `}</style>
     </section>
   )
 }
 
 export default CardsList
+
