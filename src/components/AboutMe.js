@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <div className="about-me">
       <div className="about-me__photo">
-        <img src="https://via.placeholder.com/300x300" alt="foto empresa" />
+        <img src="https://via.placeholder.com/300x300" alt="company photo" />
       </div>
       <div className="about-me__text">
         <h2>company name</h2>
