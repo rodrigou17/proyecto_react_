@@ -2,7 +2,16 @@ import React from 'react'
 
 const Banner = () => {
   return (
-    <div>Banner</div>
+    <>
+    <div className='banner'></div>
+    <style jsx>
+    {`
+      .banner{
+        margin: 20%;
+      }
+    `}
+    </style>
+    </>
   )
 }
 
