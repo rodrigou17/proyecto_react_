@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Link from "next/link"
 import LogIn from "@/components/molecules/LogIn"
+import Footer from "@/components/Footer"
 
 const login = () => {
     return (
@@ -15,6 +16,8 @@ const login = () => {
       </header>
       <br></br>
       <LogIn/>
+      <br></br>
+      <Footer/>
       </>
     )
   }
