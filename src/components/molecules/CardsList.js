@@ -22,7 +22,7 @@ const Db = [
   },
   {
     id: 4,
-    img: "https://f.fcdn.app/imgs/b35f84/www.lacancha.uy/lcanuy/f6cd/webp/catalogo/DV6842_100_1/800x800/nike-air-max-sc-ess-style-nike-air-max-sc-ess-style.jpg",
+    img: "https://f.fcdn.app/imgs/696500/www.lacancha.uy/lcanuy/7278/webp/catalogo/BQ5448_405_1/800x800/nike-court-borough-low-2-nike-court-borough-low-2.jpg",
     title:"Nike Court Borough Low 2",
     price:"UYU 3.990",
   },

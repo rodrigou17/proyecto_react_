@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import CardsList from "@/components/molecules/CardsList";
-
+import Footer from "@/components/Footer";
 
 const products = () => {
     return (
@@ -16,6 +16,8 @@ const products = () => {
       </header>
       <br></br>
       <CardsList/>
+      <br></br>
+      <Footer/>
       </>
     )
   }
