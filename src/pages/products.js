@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Navbar from '@/components/Navbar'
 import CardsList from "@/components/molecules/CardsList";
 import Footer from "@/components/Footer";
 
@@ -7,17 +8,14 @@ const products = () => {
     return (
       <>
       <Head>
-      <title>Products</title>
+        <title>Productos - Takaria - Tienda online</title>
+        <meta name="description" content="Takaria: Tienda online de calzados." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-          <nav>
-              <Link href= "">Products</Link>
-          </nav>
-      </header>
-      <br></br>
-      <CardsList/>
-      <br></br>
-      <Footer/>
+      <Navbar />
+      <CardsList />
+      <Footer />
       </>
     )
   }

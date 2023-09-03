@@ -72,9 +72,8 @@ const CardsList = () => {
       }
       <style jsx>{`
       section{
-        height: 500px;
-        width: 800px;
         display: grid;
+        justify-items: center;
         grid-template-columns: repeat(3,1fr);
         @media screen and (max-width: 768px) {
           grid-template-columns: repeat(2,1fr);

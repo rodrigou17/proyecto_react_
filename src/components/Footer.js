@@ -56,7 +56,7 @@ const Footer = () => {
                 display: flex;
                 border: 1px solid #000;
                 background: #C1DCDC;
-                height: 400px;
+                height: 300px;
                 justify-content: space-around;
                 align-items: baseline;
             }
