@@ -93,23 +93,28 @@ html,
 .box {
   padding: 1rem;
   margin: 1rem;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .grid-responsive {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3,1fr);
+    @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2,1fr);
+    };
+    @media screen and (max-width: 480px) {
+        grid-template-columns: repeat(1,1fr);
+        };
 }
 
- .product {
+ /* .product {
   padding: 1rem;
-  background-color: blueviolet;
+  /* background-color: blueviolet;
   color: white;
- }
+ } */
 
  .cart-item {
   padding: 1rem;
-  background-color: crimson;
+  background-color: #DCD2D1;
   color: white;
  }
