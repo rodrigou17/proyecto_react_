@@ -10,9 +10,9 @@ const Navbar = () => {
                 </div>
                 <div className='sections'>
                   <div className="Frame1" style={{width: '100%', height: '100%', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 48, display: 'inline-flex'}}>
-                  <div className="inicio">Inicio</div>
-                  <div className="productos">Productos</div>
-                  <div className="contacto">Contacto</div>
+                  <div className="inicio">Home</div>
+                  <div className="productos">Products</div>
+                  <div className="contacto">Login</div>
                 </div>
                 <div className='icons'>
                   <figure>

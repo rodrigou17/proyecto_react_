@@ -21,42 +21,44 @@ const ShoppingCart = () => {
         const productsList = responseProducts.data,
             cartItems = responseCart.data;
 
-        dispatch ({type: TYPES.READ_STATE, payload: {
-            products: productsList,
-            cart: cartItems
-        }})
+        dispatch({
+            type: TYPES.READ_STATE, payload: {
+                products: productsList,
+                cart: cartItems
+            }
+        })
     }
 
-    useEffect (() => {
+    useEffect(() => {
         updateState()
     }, [])
 
-    const addToCart = (id) => dispatch ({type: TYPES.ADD_TO_CART, payload: id})
+    const addToCart = (id) => dispatch({ type: TYPES.ADD_TO_CART, payload: id })
 
     const deleteFromCart = (id, all = false) => {
         if (all) {
-            dispatch ({type: TYPES.REMOVE_ALL_PRODUCTS, payload: id})
+            dispatch({ type: TYPES.REMOVE_ALL_PRODUCTS, payload: id })
         } else {
-            dispatch ({type: TYPES.REMOVE_ONE_PRODUCT, payload: id})
+            dispatch({ type: TYPES.REMOVE_ONE_PRODUCT, payload: id })
         }
     }
 
-    const clearCart = () => dispatch ({type: TYPES.CLEAR_CART})
+    const clearCart = () => dispatch({ type: TYPES.CLEAR_CART })
 
     return (
         <>
-            <h2>Carrito de Compras</h2>
-            <h3>Productos</h3>
+            
             <div className="box grid-responsive">
                 {products.map((product) => (
                     <Product key={product.id} data={product} addToCart={addToCart} />
                 ))}
+
             </div>
-            <h3>Carrito</h3>
+            <h3>Shopping Cart</h3>
             <div className="box">
                 {cart.map((item, i) => (
                     <CartItem key={i} data={item} deleteFromCart={deleteFromCart} />
-                ))}  
+                ))}
             </div>
             <button onClick={clearCart}>Limpiar Carrito</button>
         </>

@@ -1,21 +1,21 @@
 import Head from "next/head";
 import Link from "next/link";
-import CardsList from "@/components/molecules/CardsList";
 import Footer from "@/components/Footer";
+import Product from "@/components/atoms/cart_components/Product";
+import axios from "axios";
+import ShoppingCart from "@/components/molecules/ShoppingCart";
+import { Navbar } from "react-bootstrap";
 
 const products = () => {
     return (
       <>
       <Head>
+      <Navbar/>
       <title>Products</title>
       </Head>
-      <header>
-          <nav>
-              <Link href= "">Products</Link>
-          </nav>
-      </header>
+        <Navbar/>
       <br></br>
-      <CardsList/>
+      <ShoppingCart/>
       <br></br>
       <Footer/>
       </>
