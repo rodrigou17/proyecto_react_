@@ -1,0 +1,5 @@
+Avances en estilos del Carrito de compras + GRID
+
+- Se mejoraron estilos de carrito de compras, adaptando formato al Figma de referencia. 
+- Tarjetas de productos responsivas (GRID)
+- Se agregó título e imagen de cada producto a cada tarjeta, tomando dicha información de la hoja .json
