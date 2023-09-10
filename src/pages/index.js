@@ -3,6 +3,7 @@ import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar'
 import Banner from '@/components/Banner'
 import Footer from '@/components/Footer'
+import AboutMe from '@/components/AboutMe'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Banner />
+      <AboutMe />
       <Footer />
     </>
   )
