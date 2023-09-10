@@ -89,6 +89,10 @@ body {
 html,
 */
 
+.navbar {
+  background: #C1DCDC;
+}
+
 /*********** SHOPPING CART ***********/
 .box {
   padding: 1rem;
@@ -114,6 +118,4 @@ html,
   color: white;
  }
 
-.navbar {
-  background: #C1DCDC;
-}
+
