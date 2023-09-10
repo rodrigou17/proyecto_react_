@@ -55,10 +55,7 @@ const Db = [
     img: "https://f.fcdn.app/imgs/256aa9/www.lacancha.uy/lcanuy/5305/webp/catalogo/DV3854_102_1/800x800/nike-air-zoom-pegasus-40-nike-air-zoom-pegasus-40.jpg",
     title:"Nike Air Zoom Pegasus 40",
     price:"UYU 8.690",
-  },
-
-
-  
+  },  
 ]
 
 const CardsList = () => {
