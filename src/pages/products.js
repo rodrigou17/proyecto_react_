@@ -3,19 +3,23 @@ import Link from "next/link";
 import Navbar from '@/components/Navbar'
 import CardsList from "@/components/molecules/CardsList";
 import Footer from "@/components/Footer";
+import Product from "@/components/atoms/cart_components/Product";
+import axios from "axios";
+import ShoppingCart from "@/components/molecules/ShoppingCart";
+import { Navbar } from "react-bootstrap";
 
 const products = () => {
     return (
       <>
       <Head>
-        <title>Productos - Takaria - Tienda online</title>
-        <meta name="description" content="Takaria: Tienda online de calzados." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+      <Navbar/>
+      <title>Products</title>
       </Head>
-      <Navbar />
-      <CardsList />
-      <Footer />
+        <Navbar/>
+      <br></br>
+      <ShoppingCart/>
+      <br></br>
+      <Footer/>
       </>
     )
   }

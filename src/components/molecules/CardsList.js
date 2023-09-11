@@ -55,30 +55,16 @@ const Db = [
     img: "https://f.fcdn.app/imgs/256aa9/www.lacancha.uy/lcanuy/5305/webp/catalogo/DV3854_102_1/800x800/nike-air-zoom-pegasus-40-nike-air-zoom-pegasus-40.jpg",
     title:"Nike Air Zoom Pegasus 40",
     price:"UYU 8.690",
-  },  
+  },
+
+
+  
 ]
 
 const CardsList = () => {
   return (
     <section>
-      {
-        Db.map(card => <Card
-          key={card.id}
-          data={card}
-        />)
-      }
-      <style jsx>{`
-      section{
-        display: grid;
-        justify-items: center;
-        grid-template-columns: repeat(3,1fr);
-        @media screen and (max-width: 768px) {
-          grid-template-columns: repeat(2,1fr);
-        };
-      @media screen and (max-width: 480px) {
-          grid-template-columns: repeat(1,1fr);
-        };
-      `}</style>
+      <Product />
     </section>
   )
 }
