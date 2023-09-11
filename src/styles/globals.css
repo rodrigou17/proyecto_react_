@@ -89,6 +89,10 @@ body {
 html,
 */
 
+.navbar {
+  background: #C1DCDC;
+}
+
 /*********** SHOPPING CART ***********/
 .box {
   padding: 1rem;
@@ -111,10 +115,50 @@ html,
   padding: 1rem;
   /* background-color: blueviolet;
   color: white;
- } */
+}
 
- .cart-item {
+.cart-item {
   padding: 1rem;
-  background-color: #DCD2D1;
-  color: white;
- }
+  background-color: crimson;
+}
+
+/*********** CAROUSEL ***********/
+
+.carousel{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.slick-slide > div {
+  margin: 0 5px;
+}
+
+.slick-list {
+  margin: 0 -20px;
+}
+
+.card {
+  border:1px solid black;
+  background: #C1DCDC;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 800px;
+  color: #C1DCDC;
+}
+
+
+.card-top > h1 {
+  font-size: 1rem;
+  margin: 10px 20px;
+}
+
+.card-top > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-bottom {
+  margin:10px 20px ;
+}

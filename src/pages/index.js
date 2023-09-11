@@ -4,6 +4,8 @@ import Navbar from '@/components/Navbar'
 import Banner from '@/components/Banner'
 import Footer from '@/components/Footer'
 import ShoppingCart from '@/components/molecules/ShoppingCart'
+import CardsList from "@/components/molecules/CardsList";
+import Carousel from '@/components/molecules/Carousel.js/Carousel'
 
 export default function Home() {
   return (
@@ -15,8 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <ShoppingCart/>
-      <Banner />
+      <Carousel />
+      <CardsList />
       <Footer />
     </>
   )

@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
+import Navbar from '@/components/Navbar'
+import CardsList from "@/components/molecules/CardsList";
 import Footer from "@/components/Footer";
 import Product from "@/components/atoms/cart_components/Product";
 import axios from "axios";
